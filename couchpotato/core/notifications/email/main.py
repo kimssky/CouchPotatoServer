@@ -23,7 +23,7 @@ class Email(Notification):
 
         # Make the basic message
         message = MIMEText(toUnicode(message))
-        message['Subject'] = self.default_title
+        message['Subject'] = self.default_title <---- NEW MOVIE NAME HERE
         message['From'] = from_address
         message['To'] = to_address
 
